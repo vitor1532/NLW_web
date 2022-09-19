@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.divCenterTop {
+    top: 43%;
+    left: 0%;
+    transform: translate(-43%, 0%);
+}
+
+.divLeft {
+    right:100%;
+}
+
+.divRight {
+    left:100%;
+}
