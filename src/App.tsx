@@ -38,7 +38,7 @@ function App() {
     1024: { items: 6 },
   };  
   useEffect(() => {
-    axios('http://192.168.33.61:3333/games')
+    axios('http://192.168.33.55:3333/games')
       .then(response => {
         setGames(response.data)
       })
@@ -71,10 +71,10 @@ function App() {
           items={item}
           responsive={res}
           renderPrevButton={() => {
-            return <div className="absolute divCenterScreen divLeft"><p className="text-white"><button><CaretLeft size={32} /></button></p></div>
+            return <div className="absolute divCenterTop divLeft"><p className="text-white"><button><CaretLeft size={32} /></button></p></div>
           }}
           renderNextButton={() => {
-            return <div className="absolute divCenterScreen divRight"><p className="text-white"><button><CaretRight size={32} /></button></p></div>
+            return <div className="absolute divCenterTop divRight"><p className="text-white"><button><CaretRight size={32} /></button></p></div>
           }}
         />
       
